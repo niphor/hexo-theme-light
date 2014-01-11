@@ -71,7 +71,7 @@ comment_facebook:
 
 ##多说评论组件
 comment_duoshuo: 
-  short_name: niphor-dev
+  short_name: 
 
 google_analytics:
 ```
