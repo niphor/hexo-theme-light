@@ -34,6 +34,8 @@
       all = photoset.length,
       loading = true;
 
+    if(!all){return;}
+
     play($this, photoset.eq(0), function(){
       loading = false;
     });

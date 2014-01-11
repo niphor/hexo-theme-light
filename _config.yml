@@ -1,36 +1,48 @@
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
 
 widgets:
 - search
 - category
 - tag
 
-excerpt_link: Read More
+excerpt_link: 详细
+fancybox: true
+rss: /atom.xml
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
+#分享插件
+share_provider: baidu
 
-addthis:
+##addthis插件
+share_addthis:
   enable: true
   pubid:
   facebook: true
   twitter: true
-  google: true
-  pinterest: true
+  google: false
+  pinterest: false
 
-fancybox: true
+##baidu分享定制的太多，直接拷贝代码到 layout/share/baidu.ejs里面
 
-google_analytics:
-rss:
+twitter:
+  username: 
+  show_replies: false
+  tweet_count: 5
 
-comment_provider: facebook
-# Facebook comment
-facebook:
+
+#评论插件
+comment_provider: duoshuo
+
+##Facebook comment
+comment_facebook:
   appid: 123456789012345
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
+
+##多说评论组件
+comment_duoshuo: 
+  short_name: niphor-dev
+
+google_analytics:

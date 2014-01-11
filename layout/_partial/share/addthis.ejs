@@ -1,0 +1,18 @@
+<% if (share_config && share_config.enable){ %>
+  <div class="addthis addthis_toolbox addthis_default_style">
+    <% if (share_config.facebook){ %>
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    <% } %>
+    <% if (share_config.twitter){ %>
+      <a class="addthis_button_tweet"></a>
+    <% } %>
+    <% if (share_config.google){ %>
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <% } %>
+    <% if (share_config.pinterest){ %>
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    <% } %>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js<% if (share_config.pubid){ %>#pubid=<%= share_config.pubid %><% } %>"></script>
+<% } %>
